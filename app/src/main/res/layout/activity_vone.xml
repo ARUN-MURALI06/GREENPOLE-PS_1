@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".VONE">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="294dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo1" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="386dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:drawableRight="@drawable/ic_contact"
+        android:hint="choose modem number"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="389dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="ENTER A VALUE"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number" />
+
+    <TextView
+        android:id="@+id/Tv"
+        android:layout_width="368dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textAllCaps="true"
+        android:drawableRight="@drawable/ic_share"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="MESSAGE RECIEVED"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="395dp"
+        android:layout_height="273dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/STATUS"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/square"
+                android:onClick="STATUS"
+                android:text="@string/STATUS"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/GPF"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/square"
+                android:onClick="IPR"
+                android:text="@string/IPR"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/APN_R1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/square"
+                android:onClick="APN_R1"
+                android:text="@string/APN_R1"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/GCU"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/square"
+                android:onClick="APN_R2"
+                android:text="@string/APN_R2"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/GHN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/square"
+                android:onClick="GP_TIME"
+                android:text="@string/GP_TIME"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/GSID"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/square"
+                android:onClick="TCP_2"
+                android:text="@string/TCP_2"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/GFR"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/square"
+                android:onClick="APN_N1"
+                android:text="@string/APN_N1"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/GPR"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/square"
+                android:onClick="APN_N2"
+                android:text="@string/APN_N2"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/GFLT"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/square"
+                android:onClick="PTO"
+                android:text="@string/PTO"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/GFFT"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/square"
+                android:onClick="APN_C1"
+                android:text="@string/APN_C1"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/GRBR"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/square"
+                android:onClick="APN_C2"
+                android:text="@string/APN_C2"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/GRSID"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/square"
+                android:onClick="BACKUP"
+                android:text="@string/BACKUP"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/RESET"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/square"
+                android:onClick="RESET"
+                android:text="@string/RESET"
+                android:textColor="@color/black" />
+
+
+            <Button
+                android:id="@+id/SEND"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#00bfa5"
+                android:outlineSpotShadowColor="#00bfa5"
+                android:text="SEND"
+                android:textColor="@color/black"/>
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

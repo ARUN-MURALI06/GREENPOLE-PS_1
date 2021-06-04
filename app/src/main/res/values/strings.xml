@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">GREENPOLE POWER SOLUTIONS</string>
+    <string name="STATUS">STATUS</string>
+    <string name="IPR">IPR</string>
+    <string name="APN_R1">APN_R1</string>
+    <string name="APN_R2">APN_R2</string>
+    <string name="GP_TIME">GP_TIME</string>
+    <string name="TCP_2">TCP_2</string>
+    <string name="APN_N1">APN_N1</string>
+    <string name="APN_N2">APN_N2</string>
+    <string name="PTO">PTO</string>
+    <string name="APN_C1">APN_C1</string>
+    <string name="APN_C2">APN_C2</string>
+    <string name="BACKUP">BACKUP</string>
+    <string name="RESET">RESET</string>
+    <string name="SEND">SEND</string>
+    <string name="display">Enter A Value</string>
+    <string name="modem_number">modem number</string>
+    <string name="GP">GP</string>
+    <string name="GPF">GPF</string>
+    <string name="GFS">GFS</string>
+    <string name="GCU">GCU</string>
+    <string name="GHN">GHN</string>
+    <string name="GSID">GSID</string>
+    <string name="GFR">GFR</string>
+    <string name="GPR">GPR</string>
+    <string name="GFLT">GFLT</string>
+    <string name="GFFT">GFFT</string>
+    <string name="GRBR">GRBR</string>
+    <string name="GRSID">GRSID</string>
+    <string name="GVS">GVS</string>
+    <string name="GFTM">GFTM</string>
+    <string name="GS">GS</string>
+    <string name="SRESET">SRESET</string>
+    <string name="SEND1">SEND1</string>
+    <string-array name="userType">
+        <item>user</item>
+        <item>admin</item>
+    </string-array>
+</resources>
